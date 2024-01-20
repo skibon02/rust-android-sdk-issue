@@ -3,6 +3,9 @@ runs a mainloop based on android_activity::poll_events() and traces
 the events received without doing any rendering. It also saves and
 restores some minimal application state.
 
+There is a problem with calling native_window.set_frame_rate, 
+which is throwing an exception in runtime - undefined reference.
+
 ```
 export ANDROID_NDK_HOME="/home/skygrel19/Android/Sdk/ndk"
 export ANDROID_HOME="/home/skygrel19/Android/Sdk"
