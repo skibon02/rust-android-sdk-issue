@@ -1,0 +1,16 @@
+[package]
+name = "agdk-mainloop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4"
+android_logger = "0.13"
+android-activity = { version = "0.5", features = ["game-activity"] }
+ndk = { version = "0.8", features = ["api-level-31"] }
+ndk-sys = "0.5.0"
+
+
+[lib]
+name="main"
+crate_type=["cdylib"]
